@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.login-page-wrapper {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    font-family: "Geist", sans-serif;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+/* =======================
+   LEFT SIDE (Form)
+   ======================= */
+.login-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    z-index: 2;
+    padding: 40px;
+}
+
+.login-form-container {
+    width: 100%;
+    max-width: 420px;
+    animation: fadeIn 1s ease-out;
+}
+
+.mobile-brand {
+    display: none;
+    color: #611caf;
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.mh {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1a0b2e;
+    margin-bottom: 8px;
+}
+
+.sh {
+    font-size: 16px;
+    color: #64748b;
+    margin-bottom: 30px;
+}
+
+.typeButtons {
+    display: flex;
+    gap: 10px;
+    padding: 6px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    background-color: #f1f5f9;
+}
+
+.typeBtn {
+    flex: 1;
+    height: 42px;
+    border: none;
+    border-radius: 8px;
+    background: transparent;
+    color: #64748b;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.typeBtn.active {
+    background-color: #ffffff;
+    color: #611caf;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #334155;
+}
+
+.form input {
+    width: 100%;
+    height: 48px;
+    padding: 12px 16px;
+    margin-bottom: 18px;
+    border-radius: 10px;
+    border: 1.5px solid #e2e8f0;
+    background-color: #f8fafc;
+    outline: none;
+    font-family: inherit;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    color : black;
+}
+
+.form input:focus {
+    border-color: #611caf;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(97, 28, 175, 0.1);
+}
+
+.forgot {
+    text-align: right;
+    font-size: 13.5px;
+    color: #611caf;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: -6px;
+    margin-bottom: 24px;
+}
+
+.loginb {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #611caf 0%, #9b4dff 100%);
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(97, 28, 175, 0.2);
+    transition: all 0.3s ease;
+}
+
+.loginb:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 25px rgba(97, 28, 175, 0.3);
+}
+
+.loginb:active {
+    transform: translateY(0);
+}
+
+.or {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #94a3b8;
+    font-size: 13px;
+    margin: 24px 0;
+}
+
+.or::before, .or::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.or::before { margin-right: 15px; }
+.or::after { margin-left: 15px; }
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social button {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    border: 1.5px solid #e2e8f0;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social button:hover {
+    border-color: #611caf;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(97, 28, 175, 0.1);
+}
+
+.signup {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14.5px;
+    color: #64748b;
+}
+
+.signup span {
+    color: #611caf;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* =======================
+   RIGHT SIDE (Animated Purple BG)
+   ======================= */
+.login-right {
+    flex: 1.2; /* Right side left se thoda bada rahega */
+    background: linear-gradient(135deg, #5b13b9 0%, #8b3df2 100%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+    
+    /* 👇 YEH HAI RIGHT SIDE WALA MAIN ANIMATION */
+    animation: slideInRight 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    transform: translateX(100%); 
+}
+
+.right-content {
+    z-index: 10;
+    text-align: center;
+    padding: 40px;
+    opacity: 0;
+    animation: fadeInRight 1s ease-out forwards;
+    animation-delay: 0.6s;
+}
+
+.right-content h2 {
+    font-size: 56px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+}
+
+.right-content p {
+    font-size: 18px;
+    opacity: 0.9;
+    max-width: 400px;
+    line-height: 1.6;
+}
+
+/* Decorative Floating Circles */
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.0) 100%);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.circle-1 {
+    width: 400px;
+    height: 400px;
+    top: -100px;
+    right: -100px;
+    animation: float 6s ease-in-out infinite;
+}
+
+.circle-2 {
+    width: 300px;
+    height: 300px;
+    bottom: -50px;
+    left: -100px;
+    animation: float 8s ease-in-out infinite reverse;
+}
+
+/* =======================
+   KEYFRAMES (Animations)
+   ======================= */
+@keyframes slideInRight {
+    0% { 
+        transform: translateX(100%); 
+        border-top-left-radius: 50%; 
+        border-bottom-left-radius: 50%; 
+    }
+    100% { 
+        transform: translateX(0); 
+        border-top-left-radius: 0; 
+        border-bottom-left-radius: 0; 
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInRight {
+    from { opacity: 0; transform: translateX(30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes float {
+    0% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-30px) rotate(10deg); }
+    100% { transform: translateY(0) rotate(0deg); }
+}
+
+/* =======================
+   RESPONSIVE DESIGN (Mobiles)
+   ======================= */
+@media (max-width: 900px) {
+    .login-right {
+        display: none; /* Mobile par right side hide ho jayegi */
+    }
+    .mobile-brand {
+        display: block; /* Mobile par brand ka naam upar dikhega */
+    }
+    .login-left {
+        padding: 20px;
+    }
+}

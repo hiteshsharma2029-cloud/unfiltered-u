@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>UnfilteredU - Cutoff Trends</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="%PUBLIC_URL%/favicon.svg" />
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="main">
+
+<div class="page">
+
+<h1>Cutoff Trends</h1>
+<p class="pagesub">See how cutoffs moved over the years, compare branches and check your own chances</p>
+
+<div class="card datasourcecard">
+<span class="verifiedtag">VERIFIED</span> data for IIT Bombay, JEE Advanced, CSE, General category, All India quota is treated as the real closing rank series for this demo. Every other combination on this page is <span class="estimatedtag">ESTIMATED</span> using a simple formula since no real source was hooked up for it yet.
+</div>
+
+<div class="card">
+<h2>Step 1: Choose Exam</h2>
+<div class="examtabs" id="examTabs"></div>
+</div>
+
+<div class="card">
+<h2>Step 2: Choose Year</h2>
+<div class="yearpills" id="yearPills"></div>
+</div>
+
+<div class="card searchcard">
+<h2>Step 3: Search and Pick a College</h2>
+<div class="filtergroup collegefiltergroup">
+<input type="text" id="collegeSearch" placeholder="Type a college name, e.g. IIT" autocomplete="off">
+<div id="collegeSuggestions" class="suggestions"></div>
+</div>
+</div>
+
+<div class="card glanceCard">
+<h2>This Exam at a Glance</h2>
+<div class="glanceStats" id="glanceStats"></div>
+<div class="glanceCharts">
+<div class="glanceChartBox">
+<div class="glanceChartTitle">Colleges by City</div>
+<canvas id="glanceCityChart" height="180"></canvas>
+</div>
+<div class="glanceChartBox">
+<div class="glanceChartTitle">Avg Closing Rank by College</div>
+<canvas id="glanceCollegeChart" height="180"></canvas>
+</div>
+</div>
+</div>
+
+<div class="card" id="qualifyingCard">
+<h2>Official Qualifying Cutoff Percentile <span class="tag">NTA data</span></h2>
+<p class="pagesub">Minimum percentile needed to qualify JEE Main for JEE Advanced eligibility, by category and year</p>
+<table id="qualifyingTable" class="datatable"></table>
+</div>
+
+<div class="card filterbar">
+<div class="filtergroup">
+<label>Course / Branch</label>
+<select id="branchSelect"></select>
+</div>
+<div class="filtergroup">
+<label>Category</label>
+<select id="categorySelect"></select>
+</div>
+<div class="filtergroup">
+<label>Quota</label>
+<select id="quotaSelect"></select>
+</div>
+<div class="filtergroup">
+<label>Counselling Round</label>
+<select id="roundSelect"></select>
+</div>
+<div class="filtergroup filtergroupbtn">
+<label>&nbsp;</label>
+<button id="resetBtn" class="resetbtn">↺ Reset filters</button>
+</div>
+</div>
+
+<div class="card">
+<div class="cardhead">
+<h2>Cutoff Trend <span id="trendBranchLabel" class="tag"></span></h2>
+<div class="toggles">
+<button class="modebtn active" data-mode="years">All Years</button>
+<button class="modebtn" data-mode="single">Single Year</button>
+<select id="chartType">
+<option value="line">Line</option>
+<option value="bar">Bar</option>
+</select>
+</div>
+</div>
+<canvas id="trendChart" height="110"></canvas>
+<div id="trendSummary" class="summary"></div>
+</div>
+
+<div class="card">
+<h2>Round Wise Movement <span id="roundYearLabel" class="tag"></span></h2>
+<canvas id="roundChart" height="110"></canvas>
+<table id="roundTable" class="datatable"></table>
+<div id="roundFlow" class="flow"></div>
+</div>
+
+<div class="card">
+<h2>Compare Branches</h2>
+<div id="branchChecks" class="checks"></div>
+<canvas id="compareChart" height="110"></canvas>
+<table id="compareTable" class="datatable"></table>
+</div>
+
+<div class="card">
+<div class="cardhead">
+<h2>Category Wise Comparison</h2>
+<select id="categoryChartType">
+<option value="pie">Pie</option>
+<option value="doughnut">Doughnut</option>
+<option value="bar">Bar</option>
+</select>
+</div>
+<canvas id="categoryChart" height="140"></canvas>
+</div>
+
+<div class="card">
+<h2>Quota Wise Comparison</h2>
+<canvas id="quotaChart" height="120"></canvas>
+<p id="quotaNote" class="notesmall"></p>
+</div>
+
+<div class="card predictcard">
+<h2>Predicted Cutoff 2027 <span class="estimatetag">ESTIMATE, NOT OFFICIAL</span></h2>
+<div id="predictBox"></div>
+</div>
+
+<div class="card">
+<h2>Why did the cutoff change?</h2>
+<div id="whyBox"></div>
+</div>
+
+<div class="card chancecard">
+<h2>Check Your Chances</h2>
+<p class="pagesub">Enter your rank and see programs at this college where admission has historically been possible</p>
+<div class="chanceform">
+<input type="number" id="chanceRank" placeholder="Enter your rank">
+<select id="chanceCategory"></select>
+<select id="chanceQuota"></select>
+<button id="chanceBtn">Check My Chances</button>
+</div>
+<div id="chanceResults" class="chanceresults"></div>
+</div>
+
+<div class="card">
+<h2>Official Sources</h2>
+<div id="sourceLinks" class="sourcelinks"></div>
+</div>
+
+<div class="card">
+<h2>Frequently Asked Questions</h2>
+<div id="faqList" class="faqlist"></div>
+</div>
+
+<div class="card comingcard">
+<h2>Coming soon on this page</h2>
+<ul class="soonlist">
+<li>Interactive campus map with click through cutoffs per campus</li>
+<li>Live seat tracker during an actual counselling round</li>
+<li>"People with your rank chose" anonymised insight</li>
+<li>Drag to reorder priorities like placement, fees, distance from home</li>
+</ul>
+</div>
+
+</div>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
