@@ -15,9 +15,6 @@
     background-color: #ffffff;
 }
 
-/* =======================
-   LEFT SIDE (Form)
-   ======================= */
 .login-left {
     flex: 1;
     display: flex;
@@ -203,11 +200,8 @@
     cursor: pointer;
 }
 
-/* =======================
-   RIGHT SIDE (Animated Purple BG)
-   ======================= */
 .login-right {
-    flex: 1.2; /* Right side left se thoda bada rahega */
+    flex: 1.2; 
     background: linear-gradient(135deg, #5b13b9 0%, #8b3df2 100%);
     position: relative;
     display: flex;
@@ -217,7 +211,7 @@
     color: white;
     overflow: hidden;
     
-    /* 👇 YEH HAI RIGHT SIDE WALA MAIN ANIMATION */
+   
     animation: slideInRight 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
     transform: translateX(100%); 
 }
@@ -245,7 +239,7 @@
     line-height: 1.6;
 }
 
-/* Decorative Floating Circles */
+
 .circle {
     position: absolute;
     border-radius: 50%;
@@ -270,9 +264,7 @@
     animation: float 8s ease-in-out infinite reverse;
 }
 
-/* =======================
-   KEYFRAMES (Animations)
-   ======================= */
+
 @keyframes slideInRight {
     0% { 
         transform: translateX(100%); 
@@ -302,15 +294,13 @@
     100% { transform: translateY(0) rotate(0deg); }
 }
 
-/* =======================
-   RESPONSIVE DESIGN (Mobiles)
-   ======================= */
+
 @media (max-width: 900px) {
     .login-right {
-        display: none; /* Mobile par right side hide ho jayegi */
+        display: none; 
     }
     .mobile-brand {
-        display: block; /* Mobile par brand ka naam upar dikhega */
+        display: block; 
     }
     .login-left {
         padding: 20px;
