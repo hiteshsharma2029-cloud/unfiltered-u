@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Geomini:wght@200..800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Geomini", sans-serif;
+    background: radial-gradient(
+        circle at center,
+        rgba(97, 28, 175, 0.15),
+        white 60%
+    );
+    position: relative;
+    overflow: hidden;
+}
+
+.uf {
+    width: 100%;
+    height: 20vh;
+    background-color: rgba(97, 28, 175, 0.85);
+    color: white;
+    font-size: 80px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 20px rgba(97, 28, 175, 0.3);
+}
+
+.login {
+    width: 430px;
+    min-height: 650px;
+    margin-top: 45px;
+    padding: 38px;
+    border-radius: 35px;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(97, 28, 175, 0.25);
+    box-shadow: 0 0 35px rgba(97, 28, 175, 0.25);
+    backdrop-filter: blur(15px);
+}
+
+.mh {
+    text-align: center;
+    font-family: "Geist", sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    color: #27104a;
+}
+
+.sh {
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 25px;
+    font-family: "Geist", sans-serif;
+    font-size: 17px;
+    color: #777;
+}
+
+.typeButtons {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+    margin-bottom: 25px;
+    border-radius: 35px;
+    background-color: #f0eafa;
+}
+
+.typeBtn {
+    width: 50%;
+    height: 45px;
+    border: none;
+    border-radius: 30px;
+    background: transparent;
+    color: #611caf;
+    font-family: "Geist", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.typeBtn.active {
+    background-color: #611caf;
+    color: white;
+    box-shadow: 0 5px 15px rgba(97, 28, 175, 0.3);
+}
+
+.form {
+    width: 100%;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 7px;
+    font-family: "Geist", sans-serif;
+    font-weight: 600;
+    color: #3b2160;
+}
+
+.form input {
+    width: 100%;
+    height: 47px;
+    padding: 12px 18px;
+    margin-bottom: 17px;
+    border-radius: 30px;
+    border: 2px solid #eee;
+    outline: none;
+    font-family: "Geist", sans-serif;
+    font-size: 15px;
+    transition: 0.25s;
+}
+
+.form input:focus {
+    border-color: #611caf;
+    box-shadow: 0 0 10px rgba(97, 28, 175, 0.2);
+}
+
+.form input::placeholder {
+    color: #999;
+}
+
+.forgot {
+    text-align: right;
+    margin-top: -3px;
+    margin-bottom: 20px;
+    font-family: "Geist", sans-serif;
+    font-size: 14px;
+    color: #611caf;
+    cursor: pointer;
+}
+
+.loginb {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 17px;
+    font-family: "Geist", sans-serif;
+    font-weight: 700;
+    background: linear-gradient(90deg, #611caf, #9b4dff);
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(97, 28, 175, 0.3);
+    transition: 0.25s;
+}
+
+.loginb:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(97, 28, 175, 0.4);
+}
+
+.loginb:active {
+    transform: scale(0.97);
+}
+
+.or {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    font-family: "Geist", sans-serif;
+    color: #999;
+}
+
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social button {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    background: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.social button:hover {
+    transform: translateY(-4px);
+    border-color: #611caf;
+    box-shadow: 0 5px 15px rgba(97, 28, 175, 0.25);
+}
+
+.signup {
+    text-align: center;
+    margin-top: 20px;
+    font-family: "Geist", sans-serif;
+    font-size: 14px;
+    color: #777;
+}
+
+.signup span {
+    color: #611caf;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.ball {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: rgba(97, 28, 175, 0.85);
+    animation: ballBounce 3s infinite ease-in-out;
+}
+
+.left {
+    left: 3%;
+    top: 55%;
+}
+
+.right {
+    right: 3%;
+    top: 55%;
+    animation-delay: 1.5s;
+}
+
+@keyframes ballBounce {
+    0% {
+        transform: translateY(0) scaleX(1) scaleY(1);
+    }
+
+    25% {
+        transform: translateY(-150px) scaleX(.9) scaleY(1.1);
+    }
+
+    50% {
+        transform: translateY(-200px) scaleX(1) scaleY(1);
+    }
+
+    75% {
+        transform: translateY(-80px) scaleX(.9) scaleY(1.1);
+    }
+
+    85% {
+        transform: translateY(0) scaleX(1.2) scaleY(.8);
+    }
+
+    100% {
+        transform: translateY(0) scaleX(1) scaleY(1);
+    }
+}
+
+@media (max-width: 700px) {
+    .uf {
+        height: 15vh;
+        font-size: 50px;
+    }
+
+    .login {
+        width: 90%;
+        margin-top: 35px;
+        padding: 30px;
+    }
+
+    .ball {
+        display: none;
+    }
+}
