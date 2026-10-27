@@ -1,0 +1,241 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+:root {
+  color-scheme: dark;
+
+  --uu-bg: #000000;
+  --uu-bg-soft: #050505;
+  --uu-surface: rgba(8, 8, 10, 0.72);
+  --uu-surface-hover: rgba(22, 22, 24, 0.92);
+
+  --uu-text: #ffffff;
+  --uu-text-muted: #969696;
+  --uu-text-faint: #6d6d6d;
+
+  --uu-accent: #ffffff;
+  --uu-accent-strong: #ffffff;
+  --uu-accent-soft: rgba(255, 255, 255, 0.08);
+
+  --uu-border: rgba(255, 255, 255, 0.14);
+  --uu-shadow: 0 18px 55px rgba(0, 0, 0, 0.22);
+
+  --uu-radius-sm: 10px;
+  --uu-radius-md: 16px;
+  --uu-radius-lg: 24px;
+  --uu-radius-pill: 999px;
+
+  --uu-font: "Inter", sans-serif;
+  --uu-text-zoom: 1;
+  --uu-space: 1;
+  --uu-card-opacity: 0.72;
+  --uu-glass-blur: 14px;
+  --uu-glow: 0.35;
+  --uu-line-opacity: 0.14;
+  --uu-motion-duration: 1s;
+  --uu-density: 1;
+
+  font-family: var(--uu-font);
+  font-size: calc(16px * var(--uu-text-zoom));
+  background: var(--uu-bg);
+  color: var(--uu-text);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  scroll-behavior: smooth;
+  background: var(--uu-bg);
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background: transparent;
+  color: var(--uu-text);
+  font-family: var(--uu-font);
+  line-height: 1.55;
+}
+
+body,
+button,
+input,
+textarea,
+select {
+  font-family: var(--uu-font);
+}
+
+button,
+input,
+textarea,
+select {
+  font-size: inherit;
+}
+
+button {
+  color: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img,
+svg,
+video,
+canvas {
+  max-width: 100%;
+}
+
+img {
+  display: block;
+}
+
+::selection {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+:focus-visible {
+  outline: 2px solid var(--uu-accent-strong);
+  outline-offset: 3px;
+}
+
+#root {
+  min-height: 100vh;
+  isolation: isolate;
+}
+
+.uu-app-shell {
+  position: relative;
+  min-height: 100vh;
+  color: var(--uu-text);
+  background: transparent;
+}
+
+.uu-page-content {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+}
+
+.uu-card {
+  color: var(--uu-text);
+  background: var(--uu-surface);
+  border: 1px solid var(--uu-border);
+  border-radius: var(--uu-radius-lg);
+  box-shadow: var(--uu-shadow);
+  backdrop-filter: blur(var(--uu-glass-blur));
+  -webkit-backdrop-filter: blur(var(--uu-glass-blur));
+  transition:
+    background var(--uu-motion-duration) ease,
+    border-color var(--uu-motion-duration) ease,
+    box-shadow var(--uu-motion-duration) ease;
+}
+
+.uu-muted {
+  color: var(--uu-text-muted);
+}
+
+.uu-accent {
+  color: var(--uu-accent-strong);
+}
+
+.uu-container {
+  width: min(100% - 40px, 1200px);
+  margin-inline: auto;
+}
+
+[data-contrast="high"] {
+  --uu-text-muted: #d0d6e8;
+  --uu-text-faint: #b1bad1;
+  --uu-border: rgba(225, 230, 255, 0.32);
+  --uu-surface: rgba(9, 13, 26, 0.96);
+}
+
+[data-contrast="normal"] {
+  color-scheme: dark;
+}
+
+[data-font="system"] {
+  --uu-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+[data-font="serif"] {
+  --uu-font: Georgia, "Times New Roman", serif;
+}
+
+[data-spacing="compact"] {
+  --uu-space: 0.8;
+}
+
+[data-spacing="cozy"] {
+  --uu-space: 1;
+}
+
+[data-spacing="relaxed"] {
+  --uu-space: 1.25;
+}
+
+
+[data-motion="reduce"] {
+  scroll-behavior: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+
+@media (max-width: 640px) {
+  .uu-container {
+    width: min(100% - 28px, 1200px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Original Settings design compatibility */
+:root {
+  --font: var(--uu-font);
+  --sans: var(--uu-font);
+  --muted: var(--uu-text-muted);
+  --faint: var(--uu-text-faint);
+  --line: var(--uu-border);
+  --field: rgba(255,255,255,.045);
+  --ease: cubic-bezier(.2,.7,.2,1);
+  --s1: 8px;
+  --s2: 16px;
+  --s3: 24px;
+  --s4: 32px;
+  --s5: 48px;
+  --sat: env(safe-area-inset-top, 0px);
+  --sab: env(safe-area-inset-bottom, 0px);
+  --sal: env(safe-area-inset-left, 0px);
+  --sar: env(safe-area-inset-right, 0px);
+}
+[data-font="easy"] { --uu-font: "Inter", sans-serif; letter-spacing: .03em; }
+[data-spacing="roomy"] { --uu-space: 1.3; }

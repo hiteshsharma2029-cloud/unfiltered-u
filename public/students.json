@@ -1,0 +1,1796 @@
+{
+  "students": [
+    {
+      "fname": "madhur",
+      "lname": "anand",
+      "rollnumber": "2510990585",
+      "course": "becse",
+      "year": "25",
+      "email": "madhur0585.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "akshay",
+      "lname": "anand",
+      "rollnumber": "2510990557",
+      "course": "becse",
+      "year": "25",
+      "email": "akshay0557.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "soumay",
+      "lname": "dadwal",
+      "rollnumber": "2510990538",
+      "course": "becse",
+      "year": "25",
+      "email": "soumay0538.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "janit",
+      "lname": "kumar",
+      "rollnumber": "2510990539",
+      "course": "becse",
+      "year": "25",
+      "email": "janit0539.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "bhumika",
+      "lname": "jagga",
+      "rollnumber": "2510990540",
+      "course": "becse",
+      "year": "25",
+      "email": "bhumika0540.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "hitesh",
+      "lname": "sharma",
+      "rollnumber": "2510990543",
+      "course": "becse",
+      "year": "25",
+      "email": "hitesh0543.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "inayat",
+      "lname": "garg",
+      "rollnumber": "2510990545",
+      "course": "becse",
+      "year": "25",
+      "email": "inayat0545.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "akanksha",
+      "lname": "",
+      "rollnumber": "2510990548",
+      "course": "becse",
+      "year": "25",
+      "email": "akanksha0548.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "chirag",
+      "lname": "goyal",
+      "rollnumber": "2510990553",
+      "course": "becse",
+      "year": "25",
+      "email": "chirag0553.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "naman",
+      "lname": "singh",
+      "rollnumber": "2510990554",
+      "course": "becse",
+      "year": "25",
+      "email": "naman0554.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "saksham",
+      "lname": "",
+      "rollnumber": "2510990555",
+      "course": "becse",
+      "year": "25",
+      "email": "saksham0555.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "ananya",
+      "lname": "setia",
+      "rollnumber": "2510990556",
+      "course": "becse",
+      "year": "25",
+      "email": "ananya0556.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "kirti",
+      "lname": "insan",
+      "rollnumber": "2510990560",
+      "course": "becse",
+      "year": "25",
+      "email": "kirti0560.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "sonit",
+      "lname": "kathuria",
+      "rollnumber": "2510990561",
+      "course": "becse",
+      "year": "25",
+      "email": "sonit0561.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "yashika",
+      "lname": "goyal",
+      "rollnumber": "2510990562",
+      "course": "becse",
+      "year": "25",
+      "email": "yashika0562.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "raghav",
+      "lname": "sharma",
+      "rollnumber": "2510990564",
+      "course": "becse",
+      "year": "25",
+      "email": "raghav0564.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "aman",
+      "lname": "thakur",
+      "rollnumber": "2510990567",
+      "course": "becse",
+      "year": "25",
+      "email": "aman0567.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "arunima",
+      "lname": "sharma",
+      "rollnumber": "2510990568",
+      "course": "becse",
+      "year": "25",
+      "email": "arunima0568.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "harshit",
+      "lname": "pooner",
+      "rollnumber": "2510990569",
+      "course": "becse",
+      "year": "25",
+      "email": "harshit0569.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "bhumi",
+      "lname": "",
+      "rollnumber": "2510990575",
+      "course": "becse",
+      "year": "25",
+      "email": "bhumi0575.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "mudit",
+      "lname": "bhatia",
+      "rollnumber": "2510990576",
+      "course": "becse",
+      "year": "25",
+      "email": "mudit0576.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "bhuvnesh",
+      "lname": "",
+      "rollnumber": "2510990578",
+      "course": "becse",
+      "year": "25",
+      "email": "bhuvnesh0578.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "ritik",
+      "lname": "kumar",
+      "rollnumber": "2510990579",
+      "course": "becse",
+      "year": "25",
+      "email": "ritik0579.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "bhavya",
+      "lname": "galhotra",
+      "rollnumber": "2510990582",
+      "course": "becse",
+      "year": "25",
+      "email": "bhavya0582.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "satvik",
+      "lname": "",
+      "rollnumber": "2510990584",
+      "course": "becse",
+      "year": "25",
+      "email": "satvik0584.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "anika",
+      "lname": "",
+      "rollnumber": "2510990586",
+      "course": "becse",
+      "year": "25",
+      "email": "anika0586.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "nandita",
+      "lname": "",
+      "rollnumber": "2510990587",
+      "course": "becse",
+      "year": "25",
+      "email": "nandita0587.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "vanshika",
+      "lname": "",
+      "rollnumber": "2510990590",
+      "course": "becse",
+      "year": "25",
+      "email": "vanshika0590.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "nikhil",
+      "lname": "kumar",
+      "rollnumber": "2510990591",
+      "course": "becse",
+      "year": "25",
+      "email": "nikhil0591.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "jashanpreet",
+      "lname": "singh",
+      "rollnumber": "2510990594",
+      "course": "becse",
+      "year": "25",
+      "email": "jashanpreet0594.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "saiyam",
+      "lname": "arora",
+      "rollnumber": "2510990599",
+      "course": "becse",
+      "year": "25",
+      "email": "saiyam0599.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "reva",
+      "lname": "shukla",
+      "rollnumber": "2510990601",
+      "course": "becse",
+      "year": "25",
+      "email": "reva0601.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "tushar",
+      "lname": "singh",
+      "rollnumber": "2510991415",
+      "course": "becse",
+      "year": "25",
+      "email": "tushar1415.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "mohak",
+      "lname": "kumar",
+      "rollnumber": "2510991446",
+      "course": "becse",
+      "year": "25",
+      "email": "mohak1446.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "dhruv",
+      "lname": "gandhi",
+      "rollnumber": "2510990638",
+      "course": "becse",
+      "year": "25",
+      "email": "dhruv0638.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "avdhi",
+      "lname": "chhabra",
+      "rollnumber": "2510990602",
+      "course": "becse",
+      "year": "25",
+      "email": "avdhi0602.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "saloni",
+      "lname": "sachdeva",
+      "rollnumber": "2510990604",
+      "course": "becse",
+      "year": "25",
+      "email": "saloni0604.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "gagan",
+      "lname": "puri",
+      "rollnumber": "2510990607",
+      "course": "becse",
+      "year": "25",
+      "email": "gagan0607.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "kritika",
+      "lname": "",
+      "rollnumber": "2510990610",
+      "course": "becse",
+      "year": "25",
+      "email": "kritika0610.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "parth",
+      "lname": "",
+      "rollnumber": "2510990612",
+      "course": "becse",
+      "year": "25",
+      "email": "parth0612.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "arnav",
+      "lname": "garg",
+      "rollnumber": "2510990613",
+      "course": "becse",
+      "year": "25",
+      "email": "arnav0613.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "gurpreet",
+      "lname": "singh",
+      "rollnumber": "2510990616",
+      "course": "becse",
+      "year": "25",
+      "email": "gurpreet0616.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "abhishek",
+      "lname": "verma",
+      "rollnumber": "2510990617",
+      "course": "becse",
+      "year": "25",
+      "email": "abhishek0617.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "gourav",
+      "lname": "sharma",
+      "rollnumber": "2510990619",
+      "course": "becse",
+      "year": "25",
+      "email": "gourav0619.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "pianshu",
+      "lname": "khera",
+      "rollnumber": "2510990623",
+      "course": "becse",
+      "year": "25",
+      "email": "pianshu0623.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "tanvi",
+      "lname": "",
+      "rollnumber": "2510990626",
+      "course": "becse",
+      "year": "25",
+      "email": "tanvi0626.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "sarisha",
+      "lname": "uppal",
+      "rollnumber": "2510990628",
+      "course": "becse",
+      "year": "25",
+      "email": "sarisha0628.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "siya",
+      "lname": "",
+      "rollnumber": "2510990630",
+      "course": "becse",
+      "year": "25",
+      "email": "siya0630.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "gurjot",
+      "lname": "singh sandhu",
+      "rollnumber": "2510990632",
+      "course": "becse",
+      "year": "25",
+      "email": "gurjot0632.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "khushi",
+      "lname": "",
+      "rollnumber": "2510990634",
+      "course": "becse",
+      "year": "25",
+      "email": "khushi0634.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "yoshita",
+      "lname": "",
+      "rollnumber": "2510990635",
+      "course": "becse",
+      "year": "25",
+      "email": "yoshita0635.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "tanishka",
+      "lname": "gupta",
+      "rollnumber": "2510990637",
+      "course": "becse",
+      "year": "25",
+      "email": "tanishka0637.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "divy",
+      "lname": "abrol",
+      "rollnumber": "2510990639",
+      "course": "becse",
+      "year": "25",
+      "email": "divy0639.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "ruchika",
+      "lname": "sharma",
+      "rollnumber": "2510990640",
+      "course": "becse",
+      "year": "25",
+      "email": "ruchika0640.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "lakshay",
+      "lname": "",
+      "rollnumber": "2510990641",
+      "course": "becse",
+      "year": "25",
+      "email": "lakshay0641.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "lakshya",
+      "lname": "thakral",
+      "rollnumber": "2510990643",
+      "course": "becse",
+      "year": "25",
+      "email": "lakshya0643.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "harshita",
+      "lname": "",
+      "rollnumber": "2510990645",
+      "course": "becse",
+      "year": "25",
+      "email": "harshita0645.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "jahnvi",
+      "lname": "",
+      "rollnumber": "2510990646",
+      "course": "becse",
+      "year": "25",
+      "email": "jahnvi0646.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "kanav",
+      "lname": "chadha",
+      "rollnumber": "2510990649",
+      "course": "becse",
+      "year": "25",
+      "email": "kanav0649.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "kaustubh",
+      "lname": "rai",
+      "rollnumber": "2510990651",
+      "course": "becse",
+      "year": "25",
+      "email": "kaustubh0651.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "himani",
+      "lname": "singhania",
+      "rollnumber": "2510990654",
+      "course": "becse",
+      "year": "25",
+      "email": "himani0654.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "garima",
+      "lname": "",
+      "rollnumber": "2510990656",
+      "course": "becse",
+      "year": "25",
+      "email": "garima0656.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "navya",
+      "lname": "sehgal",
+      "rollnumber": "2510990657",
+      "course": "becse",
+      "year": "25",
+      "email": "navya0657.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "hriday",
+      "lname": "sehgal",
+      "rollnumber": "2510990662",
+      "course": "becse",
+      "year": "25",
+      "email": "hriday0662.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "divyanshi",
+      "lname": "",
+      "rollnumber": "2510990663",
+      "course": "becse",
+      "year": "25",
+      "email": "divyanshi0663.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "ashutosh",
+      "lname": "",
+      "rollnumber": "2510990404",
+      "course": "becse",
+      "year": "25",
+      "email": "ashutosh0404.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "paras",
+      "lname": "",
+      "rollnumber": "2510990483",
+      "course": "becse",
+      "year": "25",
+      "email": "paras0483.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "himakshi",
+      "lname": "",
+      "rollnumber": "2510990416",
+      "course": "becse",
+      "year": "25",
+      "email": "himakshi0416.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "tushar",
+      "lname": "bansal",
+      "rollnumber": "2510990415",
+      "course": "becse",
+      "year": "25",
+      "email": "tushar0415.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "kalash",
+      "lname": "",
+      "rollnumber": "2510991242",
+      "course": "becse",
+      "year": "25",
+      "email": "kalash1242.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "daksh",
+      "lname": "taneja",
+      "rollnumber": "2510991208",
+      "course": "becse",
+      "year": "25",
+      "email": "daksh1208.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "apurav",
+      "lname": "",
+      "rollnumber": "2510991240",
+      "course": "becse",
+      "year": "25",
+      "email": "apurav1240.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "yash",
+      "lname": "garg",
+      "rollnumber": "2510990062",
+      "course": "becse",
+      "year": "25",
+      "email": "yash0062.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "lakshit",
+      "lname": "ahuja",
+      "rollnumber": "2510990777",
+      "course": "becse",
+      "year": "25",
+      "email": "lakshit0777.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "kabir",
+      "lname": "rathod",
+      "rollnumber": "2510990333",
+      "course": "becse",
+      "year": "25",
+      "email": "kabir0333.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "tanish",
+      "lname": "goyal",
+      "rollnumber": "2510990358",
+      "course": "becse",
+      "year": "25",
+      "email": "tanish0358.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "yashika",
+      "lname": "",
+      "rollnumber": "2510990391",
+      "course": "becse",
+      "year": "25",
+      "email": "yashika0391.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "shobhit",
+      "lname": "kabba",
+      "rollnumber": "2510991290",
+      "course": "becse",
+      "year": "25",
+      "email": "shobhit1290.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "sanchit",
+      "lname": "kumar",
+      "rollnumber": "2510991222",
+      "course": "becse",
+      "year": "25",
+      "email": "sanchit1222.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "arnav",
+      "lname": "mehta",
+      "rollnumber": "2510990422",
+      "course": "becse",
+      "year": "25",
+      "email": "arnav0422.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "kaartik",
+      "lname": "salgotra",
+      "rollnumber": "2510991417",
+      "course": "becse",
+      "year": "25",
+      "email": "kaartik1417.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "sayna",
+      "lname": "gupta",
+      "rollnumber": "2510990099",
+      "course": "becse",
+      "year": "25",
+      "email": "sayna0099.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "parneet",
+      "lname": "kaur",
+      "rollnumber": "2510990014",
+      "course": "becse",
+      "year": "25",
+      "email": "parneet0014.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "lakshay",
+      "lname": "singla",
+      "rollnumber": "2510990792",
+      "course": "becse",
+      "year": "25",
+      "email": "lakshay0792.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "akshita",
+      "lname": "kaushik",
+      "rollnumber": "2510990763",
+      "course": "becse",
+      "year": "25",
+      "email": "akshita0763.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "yashika",
+      "lname": "gupta",
+      "rollnumber": "2510990781",
+      "course": "becse",
+      "year": "25",
+      "email": "yashika0781.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "vibhanshu",
+      "lname": "jain",
+      "rollnumber": "2510991117",
+      "course": "becse",
+      "year": "25",
+      "email": "vibhanshu1117.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "jayant",
+      "lname": "kumar",
+      "rollnumber": "2510990990",
+      "course": "becse",
+      "year": "25",
+      "email": "jayant0990.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "aman",
+      "lname": "kumar singla",
+      "rollnumber": "2510991105",
+      "course": "becse",
+      "year": "25",
+      "email": "aman1105.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "tushali",
+      "lname": "singla",
+      "rollnumber": "2510990835",
+      "course": "becse",
+      "year": "25",
+      "email": "tushali0835.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "priyanka",
+      "lname": "",
+      "rollnumber": "2510991170",
+      "course": "becse",
+      "year": "25",
+      "email": "priyanka1170.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "sia",
+      "lname": "",
+      "rollnumber": "2510991207",
+      "course": "becse",
+      "year": "25",
+      "email": "sia1207.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "shriya",
+      "lname": "",
+      "rollnumber": "2510991128",
+      "course": "becse",
+      "year": "25",
+      "email": "shriya1128.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "agampreet",
+      "lname": "singh sodhi",
+      "rollnumber": "2510990934",
+      "course": "becse",
+      "year": "25",
+      "email": "agampreet0934.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "shaurya",
+      "lname": "jaiswal",
+      "rollnumber": "2510990921",
+      "course": "becse",
+      "year": "25",
+      "email": "shaurya0921.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "vrinda",
+      "lname": "kaushal",
+      "rollnumber": "2510990866",
+      "course": "becse",
+      "year": "25",
+      "email": "vrinda0866.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "mannat",
+      "lname": "sharma",
+      "rollnumber": "2510990872",
+      "course": "becse",
+      "year": "25",
+      "email": "mannat0872.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "ishita",
+      "lname": "",
+      "rollnumber": "2510990727",
+      "course": "becse",
+      "year": "25",
+      "email": "ishita0727.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "rajni",
+      "lname": "",
+      "rollnumber": "2510990395",
+      "course": "becse",
+      "year": "25",
+      "email": "rajni0395.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "raghav",
+      "lname": "",
+      "rollnumber": "2510990750",
+      "course": "becse",
+      "year": "25",
+      "email": "raghav0750.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "sparsh",
+      "lname": "",
+      "rollnumber": "2510990709",
+      "course": "becse",
+      "year": "25",
+      "email": "sparsh0709.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "chirag",
+      "lname": "",
+      "rollnumber": "2510990258",
+      "course": "becse",
+      "year": "25",
+      "email": "chirag0258.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "sahaj",
+      "lname": "",
+      "rollnumber": "2510990252",
+      "course": "becse",
+      "year": "25",
+      "email": "sahaj0252.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "keshav",
+      "lname": "goyal",
+      "rollnumber": "2510990012",
+      "course": "becse",
+      "year": "25",
+      "email": "keshav0012.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "dhruv",
+      "lname": "goel",
+      "rollnumber": "2510990595",
+      "course": "becse",
+      "year": "25",
+      "email": "dhruv0595.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "manyata",
+      "lname": "",
+      "rollnumber": "2510991241",
+      "course": "becse",
+      "year": "25",
+      "email": "manyata1241.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "yashu",
+      "lname": "bhusari",
+      "rollnumber": "2510991247",
+      "course": "becse",
+      "year": "25",
+      "email": "yashu1247.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "falak",
+      "lname": "",
+      "rollnumber": "2510990666",
+      "course": "becse",
+      "year": "25",
+      "email": "falak0666.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "kangana",
+      "lname": "matta",
+      "rollnumber": "2510991224",
+      "course": "becse",
+      "year": "25",
+      "email": "kangana1224.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "charru",
+      "lname": "",
+      "rollnumber": "2510990904",
+      "course": "becse",
+      "year": "25",
+      "email": "charru0904.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "ananya",
+      "lname": "kalra",
+      "rollnumber": "2510991392",
+      "course": "becse",
+      "year": "25",
+      "email": "ananya1392.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "bhavya",
+      "lname": "sharma",
+      "rollnumber": "2510991147",
+      "course": "becse",
+      "year": "25",
+      "email": "bhavya1147.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "gauri",
+      "lname": "bajaj",
+      "rollnumber": "2510991422",
+      "course": "becse",
+      "year": "25",
+      "email": "gauri1422.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "nishi",
+      "lname": "",
+      "rollnumber": "2510991358",
+      "course": "becse",
+      "year": "25",
+      "email": "nishi1358.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "pulkit",
+      "lname": "",
+      "rollnumber": "2510991096",
+      "course": "becse",
+      "year": "25",
+      "email": "pulkit1096.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "yash",
+      "lname": "rohilla",
+      "rollnumber": "2510991249",
+      "course": "becse",
+      "year": "25",
+      "email": "yash1249.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "jigyasa",
+      "lname": "raturi",
+      "rollnumber": "2510991171",
+      "course": "becse",
+      "year": "25",
+      "email": "jigyasa1171.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "khushi",
+      "lname": "malhotra",
+      "rollnumber": "2510991272",
+      "course": "becse",
+      "year": "25",
+      "email": "khushi1272.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "varij",
+      "lname": "chauhan",
+      "rollnumber": "2510990448",
+      "course": "becse",
+      "year": "25",
+      "email": "varij0448.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "amay",
+      "lname": "",
+      "rollnumber": "2510990505",
+      "course": "becse",
+      "year": "25",
+      "email": "amay0505.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "sanchit",
+      "lname": "",
+      "rollnumber": "2510990519",
+      "course": "becse",
+      "year": "25",
+      "email": "sanchit0519.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "ajayveer",
+      "lname": "singh",
+      "rollnumber": "2510990803",
+      "course": "becse",
+      "year": "25",
+      "email": "ajayveer0803.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "lovedeep",
+      "lname": "",
+      "rollnumber": "2510990157",
+      "course": "becse",
+      "year": "25",
+      "email": "lovedeep0157.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "harsh",
+      "lname": "watts",
+      "rollnumber": "2510990846",
+      "course": "becse",
+      "year": "25",
+      "email": "harsh0846.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "vipransh",
+      "lname": "",
+      "rollnumber": "2510990829",
+      "course": "becse",
+      "year": "25",
+      "email": "vipransh0829.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "sagar",
+      "lname": "",
+      "rollnumber": "2510991227",
+      "course": "becse",
+      "year": "25",
+      "email": "sagar1227.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "keshav",
+      "lname": "",
+      "rollnumber": "2510990232",
+      "course": "becse",
+      "year": "25",
+      "email": "keshav0232.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "sachin",
+      "lname": "",
+      "rollnumber": "2510991421",
+      "course": "becse",
+      "year": "25",
+      "email": "sachin1421.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "arvin",
+      "lname": "",
+      "rollnumber": "2510990184",
+      "course": "becse",
+      "year": "25",
+      "email": "arvin0184.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "dhriti",
+      "lname": "",
+      "rollnumber": "2510990796",
+      "course": "becse",
+      "year": "25",
+      "email": "dhriti0796.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "aastha",
+      "lname": "gera",
+      "rollnumber": "2510990692",
+      "course": "becse",
+      "year": "25",
+      "email": "aastha0692.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "harshil",
+      "lname": "",
+      "rollnumber": "2510990992",
+      "course": "becse",
+      "year": "25",
+      "email": "harshil0992.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "sanshay",
+      "lname": "patiyal",
+      "rollnumber": "2510990995",
+      "course": "becse",
+      "year": "25",
+      "email": "sanshay0995.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "ekjyot",
+      "lname": "kaur malhotra",
+      "rollnumber": "2510990223",
+      "course": "becse",
+      "year": "25",
+      "email": "ekjyot0223.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "vansh",
+      "lname": "goyal",
+      "rollnumber": "2510990175",
+      "course": "becse",
+      "year": "25",
+      "email": "vansh0175.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "tamanna",
+      "lname": "",
+      "rollnumber": "2510991269",
+      "course": "becse",
+      "year": "25",
+      "email": "tamanna1269.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "miljot",
+      "lname": "singh",
+      "rollnumber": "2510990199",
+      "course": "becse",
+      "year": "25",
+      "email": "miljot0199.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "khyati",
+      "lname": "",
+      "rollnumber": "2510991146",
+      "course": "becse",
+      "year": "25",
+      "email": "khyati1146.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "aarushi",
+      "lname": "sharma",
+      "rollnumber": "2510990694",
+      "course": "becse",
+      "year": "25",
+      "email": "aarushi0694.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "hunar",
+      "lname": "chhabra",
+      "rollnumber": "2510991129",
+      "course": "becse",
+      "year": "25",
+      "email": "hunar1129.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "misthi",
+      "lname": "",
+      "rollnumber": "2510991402",
+      "course": "becse",
+      "year": "25",
+      "email": "misthi1402.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "ayush",
+      "lname": "thakur",
+      "rollnumber": "2510991381",
+      "course": "becse",
+      "year": "25",
+      "email": "ayush1381.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "teman",
+      "lname": "bansal",
+      "rollnumber": "2510991387",
+      "course": "becse",
+      "year": "25",
+      "email": "teman1387.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "palak",
+      "lname": "",
+      "rollnumber": "2510990978",
+      "course": "becse",
+      "year": "25",
+      "email": "palak0978.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "simrat",
+      "lname": "kaur saini",
+      "rollnumber": "2510991009",
+      "course": "becse",
+      "year": "25",
+      "email": "simrat1009.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "nikhil",
+      "lname": "dhamija",
+      "rollnumber": "2510991325",
+      "course": "becse",
+      "year": "25",
+      "email": "nikhil1325.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "yashika",
+      "lname": "",
+      "rollnumber": "2510991322",
+      "course": "becse",
+      "year": "25",
+      "email": "yashika1322.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "surbhi",
+      "lname": "narang",
+      "rollnumber": "2510990744",
+      "course": "becse",
+      "year": "25",
+      "email": "surbhi0744.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "arushi",
+      "lname": "malhotra",
+      "rollnumber": "2510991466",
+      "course": "becse",
+      "year": "25",
+      "email": "arushi1466.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "sneha",
+      "lname": "singla",
+      "rollnumber": "2510991385",
+      "course": "becse",
+      "year": "25",
+      "email": "sneha1385.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "harshit",
+      "lname": "verma",
+      "rollnumber": "2510990737",
+      "course": "becse",
+      "year": "25",
+      "email": "harshit0737.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "gungun",
+      "lname": "",
+      "rollnumber": "2510990874",
+      "course": "becse",
+      "year": "25",
+      "email": "gungun0874.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "kavya",
+      "lname": "sharma",
+      "rollnumber": "2510991230",
+      "course": "becse",
+      "year": "25",
+      "email": "kavya1230.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "ayush",
+      "lname": "",
+      "rollnumber": "2510991232",
+      "course": "becse",
+      "year": "25",
+      "email": "ayush1232.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "vidhi",
+      "lname": "",
+      "rollnumber": "2510990452",
+      "course": "becse",
+      "year": "25",
+      "email": "vidhi0452.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "navroj",
+      "lname": "",
+      "rollnumber": "2510990502",
+      "course": "becse",
+      "year": "25",
+      "email": "navroj0502.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "yuvraj",
+      "lname": "goyal",
+      "rollnumber": "2510990494",
+      "course": "becse",
+      "year": "25",
+      "email": "yuvraj0494.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "surbhi",
+      "lname": "",
+      "rollnumber": "2510991335",
+      "course": "becse",
+      "year": "25",
+      "email": "surbhi1335.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "navneet",
+      "lname": "",
+      "rollnumber": "2510990158",
+      "course": "becse",
+      "year": "25",
+      "email": "navneet0158.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "rachit",
+      "lname": "goyal",
+      "rollnumber": "2510991256",
+      "course": "becse",
+      "year": "25",
+      "email": "rachit1256.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "bhavya",
+      "lname": "garg",
+      "rollnumber": "2510990303",
+      "course": "becse",
+      "year": "25",
+      "email": "bhavya0303.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "mannat",
+      "lname": "",
+      "rollnumber": "2510990673",
+      "course": "becse",
+      "year": "25",
+      "email": "mannat0673.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "palak",
+      "lname": "",
+      "rollnumber": "2510990675",
+      "course": "becse",
+      "year": "25",
+      "email": "palak0675.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "tanvi",
+      "lname": "",
+      "rollnumber": "2510990915",
+      "course": "becse",
+      "year": "25",
+      "email": "tanvi0915.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "shreeya",
+      "lname": "",
+      "rollnumber": "2510991447",
+      "course": "becse",
+      "year": "25",
+      "email": "shreeya1447.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "navya",
+      "lname": "minhas",
+      "rollnumber": "2510991348",
+      "course": "becse",
+      "year": "25",
+      "email": "navya1348.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "damanpreet",
+      "lname": "",
+      "rollnumber": "2510991433",
+      "course": "becse",
+      "year": "25",
+      "email": "damanpreet1433.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "mauli",
+      "lname": "sachdeva",
+      "rollnumber": "2510991408",
+      "course": "becse",
+      "year": "25",
+      "email": "mauli1408.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "abhinav",
+      "lname": "trehan",
+      "rollnumber": "2510991088",
+      "course": "becse",
+      "year": "25",
+      "email": "abhinav1088.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "chirayu",
+      "lname": "kukkar",
+      "rollnumber": "2510990273",
+      "course": "becse",
+      "year": "25",
+      "email": "chirayu0273.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "harshit",
+      "lname": "rana",
+      "rollnumber": "2510990245",
+      "course": "becse",
+      "year": "25",
+      "email": "harshit0245.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "manansh",
+      "lname": "goyal",
+      "rollnumber": "2510990050",
+      "course": "becse",
+      "year": "25",
+      "email": "manansh0050.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "himanshu",
+      "lname": "",
+      "rollnumber": "2510990004",
+      "course": "becse",
+      "year": "25",
+      "email": "himanshu0004.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "shreyansh",
+      "lname": "",
+      "rollnumber": "2510990447",
+      "course": "becse",
+      "year": "25",
+      "email": "shreyansh0447.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "gurnandan",
+      "lname": "singh",
+      "rollnumber": "2510990430",
+      "course": "becse",
+      "year": "25",
+      "email": "gurnandan0430.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "gurshan",
+      "lname": "singh gill",
+      "rollnumber": "2510990066",
+      "course": "becse",
+      "year": "25",
+      "email": "gurshan0066.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "aryan",
+      "lname": "kansra",
+      "rollnumber": "2510990818",
+      "course": "becse",
+      "year": "25",
+      "email": "aryan0818.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "daksh",
+      "lname": "kumar",
+      "rollnumber": "2510990836",
+      "course": "becse",
+      "year": "25",
+      "email": "daksh0836.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "harman",
+      "lname": "singh",
+      "rollnumber": "2510990754",
+      "course": "becse",
+      "year": "25",
+      "email": "harman0754.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "gunishika",
+      "lname": "",
+      "rollnumber": "2510990678",
+      "course": "becse",
+      "year": "25",
+      "email": "gunishika0678.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "armaan",
+      "lname": "khanna",
+      "rollnumber": "2510990298",
+      "course": "becse",
+      "year": "25",
+      "email": "armaan0298.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "prince",
+      "lname": "",
+      "rollnumber": "2510990206",
+      "course": "becse",
+      "year": "25",
+      "email": "prince0206.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "khushi",
+      "lname": "aggarwal",
+      "rollnumber": "2510990118",
+      "course": "becse",
+      "year": "25",
+      "email": "khushi0118.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "ichha",
+      "lname": "",
+      "rollnumber": "2510990330",
+      "course": "becse",
+      "year": "25",
+      "email": "ichha0330.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "taranpreet",
+      "lname": "",
+      "rollnumber": "2510990137",
+      "course": "becse",
+      "year": "25",
+      "email": "taranpreet0137.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "parth",
+      "lname": "malik",
+      "rollnumber": "2510990355",
+      "course": "becse",
+      "year": "25",
+      "email": "parth0355.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "sameer",
+      "lname": "sachdeva",
+      "rollnumber": "2510991326",
+      "course": "becse",
+      "year": "25",
+      "email": "sameer1326.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "yashika",
+      "lname": "",
+      "rollnumber": "2510991179",
+      "course": "becse",
+      "year": "25",
+      "email": "yashika1179.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "ritika",
+      "lname": "",
+      "rollnumber": "2510991091",
+      "course": "becse",
+      "year": "25",
+      "email": "ritika1091.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "rhythm",
+      "lname": "",
+      "rollnumber": "2510991366",
+      "course": "becse",
+      "year": "25",
+      "email": "rhythm1366.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "shyna",
+      "lname": "",
+      "rollnumber": "2510991172",
+      "course": "becse",
+      "year": "25",
+      "email": "shyna1172.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "yuvika",
+      "lname": "",
+      "rollnumber": "2510991061",
+      "course": "becse",
+      "year": "25",
+      "email": "yuvika1061.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "santushti",
+      "lname": "",
+      "rollnumber": "2510990094",
+      "course": "becse",
+      "year": "25",
+      "email": "santushti0094.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "tisha",
+      "lname": "",
+      "rollnumber": "2510991209",
+      "course": "becse",
+      "year": "25",
+      "email": "tisha1209.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "neetika",
+      "lname": "sharma",
+      "rollnumber": "2510990254",
+      "course": "becse",
+      "year": "25",
+      "email": "neetika0254.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "monika",
+      "lname": "",
+      "rollnumber": "2510991321",
+      "course": "becse",
+      "year": "25",
+      "email": "monika1321.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "nidhi",
+      "lname": "monga",
+      "rollnumber": "2510990931",
+      "course": "becse",
+      "year": "25",
+      "email": "nidhi0931.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "paavani",
+      "lname": "jindal",
+      "rollnumber": "2510990896",
+      "course": "becse",
+      "year": "25",
+      "email": "paavani0896.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "ayaan",
+      "lname": "arora",
+      "rollnumber": "2510991351",
+      "course": "becse",
+      "year": "25",
+      "email": "ayaan1351.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "amisha",
+      "lname": "",
+      "rollnumber": "2510990289",
+      "course": "becse",
+      "year": "25",
+      "email": "amisha0289.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "priyanshi",
+      "lname": "",
+      "rollnumber": "2510991377",
+      "course": "becse",
+      "year": "25",
+      "email": "priyanshi1377.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "rajat",
+      "lname": "",
+      "rollnumber": "2510990951",
+      "course": "becse",
+      "year": "25",
+      "email": "rajat0951.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "gurshan",
+      "lname": "sandhu",
+      "rollnumber": "2510990213",
+      "course": "becse",
+      "year": "25",
+      "email": "gurshan0213.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "mehul",
+      "lname": "kapoor",
+      "rollnumber": "2510990193",
+      "course": "becse",
+      "year": "25",
+      "email": "mehul0193.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "saksham",
+      "lname": "kapila",
+      "rollnumber": "2510990163",
+      "course": "becse",
+      "year": "25",
+      "email": "saksham0163.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "niyati",
+      "lname": "sharma",
+      "rollnumber": "2510990767",
+      "course": "becse",
+      "year": "25",
+      "email": "niyati0767.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "parth",
+      "lname": "jangra",
+      "rollnumber": "2510990719",
+      "course": "becse",
+      "year": "25",
+      "email": "parth0719.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "kunal",
+      "lname": "arora",
+      "rollnumber": "2510990953",
+      "course": "becse",
+      "year": "25",
+      "email": "kunal0953.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "yashvi",
+      "lname": "singla",
+      "rollnumber": "2510991058",
+      "course": "becse",
+      "year": "25",
+      "email": "yashvi1058.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "soham",
+      "lname": "sahu",
+      "rollnumber": "2510990943",
+      "course": "becse",
+      "year": "25",
+      "email": "soham0943.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "parminder",
+      "lname": "singh",
+      "rollnumber": "2510990845",
+      "course": "becse",
+      "year": "25",
+      "email": "parminder0845.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "shivam",
+      "lname": "garg",
+      "rollnumber": "2510990789",
+      "course": "becse",
+      "year": "25",
+      "email": "shivam0789.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "rohit",
+      "lname": "jindal",
+      "rollnumber": "2510990280",
+      "course": "becse",
+      "year": "25",
+      "email": "rohit0280.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "divyam",
+      "lname": "",
+      "rollnumber": "2510990820",
+      "course": "becse",
+      "year": "25",
+      "email": "divyam0820.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "abhey",
+      "lname": "sharma",
+      "rollnumber": "2510990122",
+      "course": "becse",
+      "year": "25",
+      "email": "abhey0122.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "harshit",
+      "lname": "",
+      "rollnumber": "2510991113",
+      "course": "becse",
+      "year": "25",
+      "email": "harshit1113.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "moksh",
+      "lname": "",
+      "rollnumber": "2510990015",
+      "course": "becse",
+      "year": "25",
+      "email": "moksh0015.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "manav",
+      "lname": "jindal",
+      "rollnumber": "2510990827",
+      "course": "becse",
+      "year": "25",
+      "email": "manav0827.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "bharvi",
+      "lname": "",
+      "rollnumber": "2510990042",
+      "course": "becse",
+      "year": "25",
+      "email": "bharvi0042.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "shreyank",
+      "lname": "",
+      "rollnumber": "2510991443",
+      "course": "becse",
+      "year": "25",
+      "email": "shreyank1443.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "mohin",
+      "lname": "sharma",
+      "rollnumber": "2510990408",
+      "course": "becse",
+      "year": "25",
+      "email": "mohin0408.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "ritesh",
+      "lname": "parmar",
+      "rollnumber": "2510990225",
+      "course": "becse",
+      "year": "25",
+      "email": "ritesh0225.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "abhinandan",
+      "lname": "",
+      "rollnumber": "2510991169",
+      "course": "becse",
+      "year": "25",
+      "email": "abhinandan1169.becse25@chitkara.edu.in"
+    },
+    {
+      "fname": "pratham",
+      "lname": "",
+      "rollnumber": "2510990469",
+      "course": "becse",
+      "year": "25",
+      "email": "pratham0469.becse25@chitkara.edu.in"
+    }
+  ]
+}

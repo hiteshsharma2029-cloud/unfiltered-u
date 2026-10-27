@@ -1,0 +1,947 @@
+/*
+ * UnfilteredU Reviews page.
+ * The app-level GlobalBackground and global theme.css provide the background,
+ * typography, theme colours, spacing tokens and motion preferences.
+ */
+.uu-reviews {
+  --review-border: var(--uu-border, rgba(185, 194, 230, 0.14));
+  --review-surface: var(--uu-surface, rgba(18, 24, 42, 0.78));
+  --review-surface-hover: var(--uu-surface-hover, rgba(28, 36, 58, 0.88));
+  --review-text: var(--uu-text, #f4f6ff);
+  --review-muted: var(--uu-text-muted, #a3acc2);
+  --review-faint: var(--uu-text-faint, #737e98);
+  --review-accent: var(--uu-accent, #8b7cff);
+  --review-accent-strong: var(--uu-accent-strong, #a69aff);
+  --review-error: #ff6d85;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  min-width: 0;
+  min-height: 100vh;
+  color: var(--review-text);
+  background: transparent;
+  font-family: inherit;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+
+.uu-reviews,
+.uu-reviews *,
+.uu-reviews *::before,
+.uu-reviews *::after {
+  box-sizing: border-box;
+}
+
+.uu-reviews__main {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  min-width: 0;
+}
+
+.uu-reviews :where(button, input, select, textarea) {
+  font: inherit;
+}
+
+.uu-reviews button {
+  color: inherit;
+}
+
+.uu-reviews :where(button, a, input, select, textarea):focus-visible {
+  outline: 2px solid var(--review-accent-strong);
+  outline-offset: 3px;
+}
+
+.uu-reviews h1,
+.uu-reviews h2,
+.uu-reviews h3,
+.uu-reviews h4,
+.uu-reviews p {
+  min-width: 0;
+}
+
+.uu-reviews h2 {
+  margin: 0 0 12px;
+  color: var(--review-text);
+  font-size: clamp(1.8rem, 3.5vw, 2.65rem);
+  font-weight: 780;
+  line-height: 1.12;
+  letter-spacing: -0.045em;
+  text-transform: none;
+}
+
+.uu-reviews h3 {
+  margin: 0 0 10px;
+  color: var(--review-text);
+  font-size: 1.08rem;
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: -0.015em;
+  text-transform: none;
+}
+
+.uu-reviews h4 {
+  margin: 20px 0 8px;
+  color: var(--review-text);
+  font-size: 0.84rem;
+  font-weight: 750;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.uu-reviews p {
+  margin: 0 0 12px;
+  color: var(--review-muted);
+}
+
+.uu-reviews strong {
+  color: var(--review-text);
+  font-weight: 700;
+}
+
+.uu-reviews .review-container {
+  width: min(100% - 40px, 1120px);
+  margin-inline: auto;
+}
+
+.uu-reviews .review-section {
+  position: relative;
+  min-width: 0;
+  padding: clamp(58px, 8vw, 104px) 0;
+  border-top: 1px solid var(--review-border);
+  scroll-margin-top: 90px;
+}
+
+.uu-reviews .review-section__intro {
+  max-width: 760px;
+  margin-bottom: 30px;
+}
+
+.uu-reviews .review-section__intro > p:last-child {
+  max-width: 68ch;
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+.uu-reviews .review-kicker {
+  margin: 0 0 12px;
+  color: var(--review-accent-strong);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.uu-reviews .review-muted,
+.uu-reviews .review-section .review-muted {
+  color: var(--review-faint);
+  font-size: 0.82rem;
+}
+
+.uu-reviews .review-no-margin {
+  margin: 0;
+}
+
+/* Existing shared Card component receives page-specific classes where supported. */
+.uu-reviews .review-card,
+.uu-reviews .uu-card,
+.uu-reviews .card {
+  min-width: 0;
+  color: var(--review-text);
+  background: var(--review-surface);
+  border: 1px solid var(--review-border);
+  border-radius: var(--uu-radius-lg, 24px);
+  box-shadow: var(--uu-shadow, 0 18px 55px rgba(0, 0, 0, 0.22));
+  backdrop-filter: blur(var(--uu-glass-blur, 14px));
+  -webkit-backdrop-filter: blur(var(--uu-glass-blur, 14px));
+  padding: clamp(18px, 2.7vw, 30px);
+}
+
+.uu-reviews .review-card p:last-child {
+  margin-bottom: 0;
+}
+
+.uu-reviews .review-tag {
+  display: inline-flex;
+  align-items: center;
+  max-width: 100%;
+  border: 1px solid var(--review-border);
+  border-radius: var(--uu-radius-pill, 999px);
+  padding: 4px 10px;
+  color: var(--review-muted);
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+}
+
+.uu-reviews .review-note {
+  margin: 0 0 20px;
+  padding: 12px 16px;
+  color: var(--review-muted);
+  font-size: 0.85rem;
+  border: 1px dashed var(--review-border);
+  border-radius: var(--uu-radius-md, 16px);
+  background: color-mix(in srgb, var(--review-surface) 50%, transparent);
+}
+
+.uu-reviews .review-error {
+  margin: 10px 0 0;
+  color: var(--review-error);
+  font-size: 0.84rem;
+}
+
+/* Forms: native selects and textareas share the global Input component theme. */
+.uu-reviews .review-field {
+  min-width: 0;
+  margin-bottom: 20px;
+}
+
+.uu-reviews .review-field:last-child {
+  margin-bottom: 0;
+}
+
+.uu-reviews .review-field > label {
+  display: block;
+  margin: 0 0 8px;
+  color: var(--review-muted);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.045em;
+}
+
+.uu-reviews .review-input,
+.uu-reviews input.review-input,
+.uu-reviews textarea.review-input,
+.uu-reviews select.review-input,
+.uu-reviews .review-field input:not([type="checkbox"]),
+.uu-reviews .review-field textarea,
+.uu-reviews .review-field select {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  min-height: 46px;
+  margin: 0;
+  padding: 11px 13px;
+  color: var(--review-text);
+  background: var(--uu-bg-soft, rgba(14, 19, 34, 0.88));
+  border: 1px solid var(--review-border);
+  border-radius: var(--uu-radius-sm, 10px);
+  box-shadow: none;
+  transition: border-color 180ms ease, box-shadow 180ms ease, background 180ms ease;
+}
+
+.uu-reviews .review-input::placeholder,
+.uu-reviews input.review-input::placeholder,
+.uu-reviews textarea.review-input::placeholder {
+  color: var(--review-faint);
+  opacity: 1;
+}
+
+.uu-reviews .review-input:focus,
+.uu-reviews input.review-input:focus,
+.uu-reviews textarea.review-input:focus,
+.uu-reviews select.review-input:focus {
+  border-color: var(--review-accent-strong);
+  box-shadow: 0 0 0 3px var(--uu-accent-soft, rgba(139, 124, 255, 0.16));
+  outline: none;
+}
+
+.uu-reviews .review-input[aria-invalid="true"] {
+  border-color: var(--review-error);
+}
+
+.uu-reviews textarea.review-input,
+.uu-reviews .review-field textarea {
+  min-height: 98px;
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.uu-reviews select.review-input {
+  color-scheme: dark;
+}
+
+.uu-reviews select.review-input option {
+  color: var(--review-text);
+  background: var(--uu-bg-soft, #0e1322);
+}
+
+.uu-reviews input[type="checkbox"] {
+  flex: 0 0 20px;
+  width: 20px;
+  height: 20px;
+  min-height: 20px;
+  margin: 2px 0 0;
+  accent-color: var(--review-accent);
+}
+
+.uu-reviews .review-field__count {
+  margin-top: 5px;
+  color: var(--review-faint);
+  font-size: 0.72rem;
+  text-align: right;
+}
+
+.uu-reviews .review-grid-two,
+.uu-reviews .review-identity-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.uu-reviews .review-form-container {
+  max-width: 940px;
+}
+
+.uu-reviews .review-progress {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 7px;
+  margin: 0 0 25px;
+}
+
+.uu-reviews .review-progress span {
+  display: block;
+  height: 4px;
+  border-radius: var(--uu-radius-pill, 999px);
+  background: var(--review-border);
+  transition: background 220ms ease;
+}
+
+.uu-reviews .review-progress span.is-complete {
+  background: var(--review-accent-strong);
+}
+
+.uu-reviews .review-card__hint {
+  margin-bottom: 18px;
+  font-size: 0.85rem;
+}
+
+.uu-reviews .review-confirm-label {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  color: var(--review-text);
+  font-size: 0.94rem;
+  line-height: 1.6;
+  cursor: pointer;
+}
+
+.uu-reviews .review-confirm-label input {
+  margin-top: 4px;
+}
+
+.uu-reviews .review-actions-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.uu-reviews .review-action {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 10px 18px;
+  border: 1px solid transparent;
+  border-radius: var(--uu-radius-pill, 999px);
+  font-size: 0.84rem;
+  font-weight: 750;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 180ms ease, background 180ms ease, border-color 180ms ease, opacity 180ms ease;
+}
+
+.uu-reviews .review-action:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+
+.uu-reviews .review-action:disabled {
+  cursor: not-allowed;
+  opacity: 0.42;
+}
+
+.uu-reviews .review-action--primary {
+  color: #fff;
+  background: var(--review-accent);
+  border-color: var(--review-accent);
+}
+
+.uu-reviews .review-action--primary:hover:not(:disabled) {
+  background: var(--review-accent-strong);
+  border-color: var(--review-accent-strong);
+}
+
+.uu-reviews .review-action--secondary {
+  color: var(--review-text);
+  background: transparent;
+  border-color: var(--review-border);
+}
+
+.uu-reviews .review-action--secondary:hover:not(:disabled) {
+  background: var(--review-surface-hover);
+  border-color: var(--review-muted);
+}
+
+.uu-reviews .review-text-button {
+  display: inline;
+  min-height: 0;
+  padding: 2px 0;
+  color: var(--review-accent-strong);
+  background: transparent;
+  border: 0;
+  font-size: 0.84rem;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
+.uu-reviews .review-text-button:hover {
+  color: var(--review-text);
+}
+
+/* Identity choices */
+.uu-reviews .review-identity-card {
+  padding: 0;
+  overflow: hidden;
+  transition: border-color 180ms ease, background 180ms ease, transform 180ms ease;
+}
+
+.uu-reviews .review-identity-card:hover,
+.uu-reviews .review-identity-card.is-selected {
+  border-color: var(--review-accent-strong);
+  background: var(--review-surface-hover);
+}
+
+.uu-reviews .review-identity-card:hover {
+  transform: translateY(-2px);
+}
+
+.uu-reviews .review-identity-card__select {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: clamp(20px, 3vw, 30px);
+  color: inherit;
+  background: transparent;
+  border: 0;
+  text-align: left;
+  cursor: pointer;
+}
+
+.uu-reviews .review-identity-card__select > svg {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 20px;
+  fill: none;
+  stroke: var(--review-accent-strong);
+  stroke-width: 1.6;
+}
+
+.uu-reviews .review-identity-card__title {
+  display: block;
+  margin: 0 0 14px;
+  color: var(--review-text);
+  font-size: 1.12rem;
+  font-weight: 800;
+}
+
+.uu-reviews .review-identity-card__lines {
+  display: grid;
+  gap: 8px;
+  color: var(--review-muted);
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+.uu-reviews .review-identity-card__action {
+  display: inline-flex;
+  margin-top: 22px;
+}
+
+.uu-reviews .review-identity-card__action .review-action {
+  min-height: 38px;
+  padding: 8px 14px;
+  font-size: 0.78rem;
+}
+
+/* Flowchart */
+.uu-reviews .review-flow-section {
+  border-top: 0;
+}
+
+.uu-reviews .review-flow__diagram {
+  width: 100%;
+  margin: 14px 0 10px;
+  overflow: hidden;
+}
+
+.uu-reviews .review-flow__diagram svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.uu-reviews .review-flow__steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.uu-reviews .review-flow-step {
+  position: relative;
+  min-width: 0;
+  min-height: 150px;
+  padding: 18px;
+  border: 1px solid var(--review-border);
+  border-radius: var(--uu-radius-md, 16px);
+  background: color-mix(in srgb, var(--review-surface) 68%, transparent);
+  opacity: 0.68;
+  transition: opacity 350ms ease, border-color 350ms ease, transform 350ms ease;
+}
+
+.uu-reviews .review-flow-step.is-active {
+  border-color: color-mix(in srgb, var(--review-accent-strong) 52%, var(--review-border));
+  opacity: 1;
+}
+
+.uu-reviews .review-flow-step__number {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--review-accent-strong);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.uu-reviews .review-flow-step h3 {
+  font-size: 0.96rem;
+}
+
+.uu-reviews .review-flow-step p {
+  margin: 0;
+  font-size: 0.84rem;
+}
+
+/* Ratings */
+.uu-reviews .review-stars {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--review-accent-strong);
+  vertical-align: middle;
+}
+
+.uu-reviews .review-stars > svg {
+  display: block;
+  width: 19px;
+  height: 19px;
+  fill: transparent;
+  stroke: currentColor;
+  stroke-width: 1.55;
+}
+
+.uu-reviews .review-stars > svg.is-filled,
+.uu-reviews .review-star-button.is-filled svg {
+  fill: currentColor;
+}
+
+.uu-reviews .review-stars--interactive {
+  gap: 3px;
+}
+
+.uu-reviews .review-star-button {
+  display: inline-grid;
+  place-items: center;
+  width: 29px;
+  height: 29px;
+  min-width: 29px;
+  min-height: 29px;
+  padding: 3px;
+  color: var(--review-accent-strong);
+  background: transparent;
+  border: 0;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.uu-reviews .review-star-button svg {
+  width: 21px;
+  height: 21px;
+  fill: transparent;
+  stroke: currentColor;
+  stroke-width: 1.5;
+}
+
+.uu-reviews .review-rating-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--review-border);
+}
+
+.uu-reviews .review-rating-row:last-of-type {
+  border-bottom: 0;
+}
+
+.uu-reviews .review-rating-row__label {
+  min-width: 0;
+  color: var(--review-muted);
+  font-size: 0.88rem;
+}
+
+.uu-reviews .review-rating-row--static {
+  padding: 8px 0;
+}
+
+.uu-reviews .review-body__title {
+  margin: 12px 0 10px;
+  font-size: 1.1rem;
+}
+
+.uu-reviews .review-body__categories {
+  margin: 12px 0 0;
+}
+
+/* Feed and filtering */
+.uu-reviews .review-filters {
+  display: grid;
+  grid-template-columns: minmax(220px, 1.6fr) minmax(170px, 1fr) minmax(150px, 0.8fr) auto;
+  align-items: end;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.uu-reviews .review-filters .review-field {
+  margin-bottom: 0;
+}
+
+.uu-reviews .review-filter-reset {
+  min-height: 46px;
+  white-space: nowrap;
+}
+
+.uu-reviews .review-combobox {
+  position: relative;
+  min-width: 0;
+}
+
+.uu-reviews .review-combobox .uu-field {
+  margin: 0;
+  gap: 0;
+}
+
+.uu-reviews .review-combobox .uu-input {
+  min-height: 46px;
+  color: var(--review-text);
+  background: var(--uu-bg-soft, #0e1322);
+  border-color: var(--review-border);
+  border-radius: var(--uu-radius-sm, 10px);
+}
+
+.uu-reviews .review-combobox > label {
+  display: block;
+  margin: 0 0 8px;
+  color: var(--review-muted);
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+.uu-reviews .review-combobox__list {
+  position: absolute;
+  z-index: 10;
+  top: calc(100% + 5px);
+  left: 0;
+  right: 0;
+  max-height: 250px;
+  overflow: auto;
+  padding: 5px;
+  border: 1px solid var(--review-border);
+  border-radius: var(--uu-radius-md, 16px);
+  background: var(--uu-bg-soft, #0e1322);
+  box-shadow: var(--uu-shadow, 0 18px 55px rgba(0,0,0,.22));
+}
+
+.uu-reviews .review-combobox__list button {
+  display: block;
+  width: 100%;
+  min-height: 40px;
+  padding: 9px 11px;
+  color: var(--review-text);
+  background: transparent;
+  border: 0;
+  border-radius: 9px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.uu-reviews .review-combobox__list button:hover,
+.uu-reviews .review-combobox__list button[aria-selected="true"] {
+  background: var(--review-accent-soft, rgba(139, 124, 255, 0.16));
+}
+
+.uu-reviews .review-combobox__empty {
+  margin: 0;
+  padding: 10px;
+  color: var(--review-muted);
+  font-size: 0.84rem;
+}
+
+.uu-reviews .review-result-count {
+  margin: 24px 0 14px;
+  font-size: 0.82rem;
+}
+
+.uu-reviews .review-feed-card {
+  margin: 0 0 14px;
+}
+
+.uu-reviews .review-feed-card__meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+  color: var(--review-faint);
+  font-size: 0.76rem;
+}
+
+.uu-reviews .review-feed-card__experience {
+  max-width: 75ch;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.uu-reviews .review-feed-card__footer {
+  margin: 16px 0 0;
+}
+
+.uu-reviews .review-preserve-lines {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.uu-reviews .review-preview-card__college {
+  margin-bottom: 16px;
+  color: var(--review-faint);
+  font-size: 0.82rem;
+}
+
+.uu-reviews .review-preview-card__author {
+  margin-top: 18px;
+  color: var(--review-faint);
+  font-size: 0.82rem;
+}
+
+.uu-reviews .review-empty-state {
+  margin: 18px 0;
+}
+
+.uu-reviews .review-prototype-tool {
+  margin: 30px 0 0;
+  font-size: 0.78rem;
+}
+
+.uu-reviews .review-skeleton {
+  height: 116px;
+  margin-bottom: 14px;
+  border: 1px solid var(--review-border);
+  border-radius: var(--uu-radius-lg, 24px);
+  background: linear-gradient(100deg, transparent, color-mix(in srgb, var(--review-text) 6%, transparent), transparent);
+  background-size: 220% 100%;
+  animation: review-shimmer 1.5s linear infinite;
+}
+
+@keyframes review-shimmer {
+  from { background-position: 220% 0; }
+  to { background-position: -220% 0; }
+}
+
+.uu-reviews .review-external {
+  margin: 24px 0;
+}
+
+.uu-reviews .review-external__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+.uu-reviews .review-external__heading h3 {
+  margin-bottom: 0;
+  font-size: 1.25rem;
+}
+
+.uu-reviews .review-external__fields {
+  margin: 20px 0 10px;
+}
+
+.uu-reviews .review-external__results {
+  margin-top: 16px;
+}
+
+.uu-reviews .review-external__content {
+  margin-top: 16px;
+}
+
+.uu-reviews .review-external__summary {
+  max-width: 75ch;
+  color: var(--review-text);
+}
+
+.uu-reviews .review-external__points ul {
+  margin: 7px 0 16px;
+  padding-left: 20px;
+  color: var(--review-muted);
+}
+
+.uu-reviews .review-external__points li {
+  margin-bottom: 7px;
+  font-size: 0.9rem;
+}
+
+.uu-reviews .review-external sup a {
+  margin-left: 2px;
+  color: var(--review-accent-strong);
+  text-decoration: none;
+}
+
+.uu-reviews .review-external sup a:hover {
+  text-decoration: underline;
+}
+
+.uu-reviews .review-source-link {
+  display: block;
+  padding: 10px 0;
+  color: var(--review-text);
+  border-bottom: 1px solid var(--review-border);
+  font-size: 0.88rem;
+  overflow-wrap: anywhere;
+}
+
+.uu-reviews .review-source-link:hover {
+  color: var(--review-accent-strong);
+}
+
+.uu-reviews .review-done-card {
+  max-width: 760px;
+  margin-inline: auto;
+  padding: clamp(26px, 5vw, 54px);
+}
+
+.uu-reviews .review-done-card__icon {
+  display: grid;
+  place-items: center;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 22px;
+  color: #fff;
+  background: var(--review-accent);
+  border-radius: 50%;
+  font-size: 1.35rem;
+  font-weight: 800;
+}
+
+@media (max-width: 900px) {
+  .uu-reviews .review-filters {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .uu-reviews .review-flow__steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .uu-reviews .review-container {
+    width: min(100% - 28px, 1120px);
+  }
+
+  .uu-reviews .review-section {
+    padding: 58px 0;
+  }
+
+  .uu-reviews .review-grid-two,
+  .uu-reviews .review-identity-grid,
+  .uu-reviews .review-filters,
+  .uu-reviews .review-flow__steps {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .uu-reviews .review-flow__diagram {
+    display: none;
+  }
+
+  .uu-reviews .review-flow-step {
+    min-height: 0;
+  }
+
+  .uu-reviews .review-actions-row {
+    justify-content: stretch;
+  }
+
+  .uu-reviews .review-actions-row .review-action {
+    flex: 1 1 auto;
+  }
+
+  .uu-reviews .review-identity-card__select {
+    padding: 20px;
+  }
+
+  .uu-reviews .review-external__heading {
+    flex-wrap: wrap;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .uu-reviews .review-action,
+  .uu-reviews .review-identity-card,
+  .uu-reviews .review-progress span,
+  .uu-reviews .review-flow-step {
+    transition: none !important;
+  }
+
+  .uu-reviews .review-skeleton {
+    animation: none !important;
+  }
+}
+/* Fix: make primary button labels readable */
+.uu-reviews .review-action--primary,
+.uu-reviews .review-hero .review-action--primary,
+.uu-reviews button.uu-button--primary {
+  color: #111111 !important;
+}
+
+/* Disabled buttons should still show their labels */
+.uu-reviews .review-action--primary:disabled {
+  color: #333333 !important;
+  background: #d0d0d0 !important;
+  border-color: #d0d0d0 !important;
+  opacity: 1 !important;
+}
+/* Fix: Keep Review button text visible */
+.uu-reviews .review-action--primary,
+.uu-reviews .review-hero .review-action--primary,
+.uu-reviews button.uu-button--primary {
+  color: #111426 !important;
+}

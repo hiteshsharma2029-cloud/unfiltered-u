@@ -1,0 +1,37 @@
+
+.uu-ui-card {
+  padding: calc(24px * var(--uu-space, 1));
+  min-width: 0;
+  background: var(--uu-surface);
+  border: 1px solid var(--uu-border);
+  border-radius: var(--uu-radius-lg);
+  backdrop-filter: blur(var(--uu-glass-blur));
+  -webkit-backdrop-filter: blur(var(--uu-glass-blur));
+}
+
+.uu-ui-card--flat {
+  box-shadow: none;
+}
+
+.uu-ui-card--interactive {
+  transition:
+    transform 180ms ease,
+    background 180ms ease,
+    border-color 180ms ease;
+}
+
+.uu-ui-card--interactive:hover {
+  transform: translateY(-2px);
+  background: var(--uu-surface-hover);
+  border-color: rgba(166, 154, 255, 0.32);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .uu-ui-card--interactive {
+    transition: none;
+  }
+
+  .uu-ui-card--interactive:hover {
+    transform: none;
+  }
+}

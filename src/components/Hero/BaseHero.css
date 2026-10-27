@@ -1,0 +1,60 @@
+/* Shared layout and type for all page hero sections. */
+.uu-hero,
+.base-hero {
+  width: min(calc(100% - 48px), 1240px);
+  margin-inline: auto;
+  color: var(--uu-text, #fff);
+}
+
+.uu-hero__eyebrow,
+.base-hero__eyebrow {
+  margin: 0 0 20px;
+  color: var(--uu-text-muted, #969696);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+.uu-hero__title,
+.base-hero__title {
+  margin: 0;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.045em;
+}
+
+.uu-hero__description,
+.base-hero__description {
+  max-width: 680px;
+  margin: 20px 0 0;
+  color: var(--uu-text-muted, #969696);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.uu-hero__actions,
+.base-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+@media (max-width: 640px) {
+  .uu-hero,
+  .base-hero {
+    width: calc(100% - 32px);
+  }
+
+  .uu-hero__title,
+  .base-hero__title {
+    font-size: clamp(2.25rem, 9vw, 3.5rem);
+  }
+
+  .uu-hero__description,
+  .base-hero__description {
+    font-size: 0.95rem;
+  }
+}

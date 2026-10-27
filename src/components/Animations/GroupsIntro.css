@@ -1,0 +1,199 @@
+
+.uu-groups-intro {
+  position: fixed;
+  inset: var(--nav-h, 0px) 0 0;
+  z-index: 20;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  background:
+    radial-gradient(
+      60% 60% at 50% 50%,
+      rgba(255, 255, 255, 0.07),
+      rgba(0, 0, 0, 0.82) 70%
+    ),
+    rgba(0, 0, 0, 0.55);
+  transition:
+    opacity 0.8s ease,
+    transform 0.9s cubic-bezier(0.2, 0.7, 0.2, 1),
+    filter 0.8s ease;
+}
+
+.uu-groups-intro.s2 {
+  opacity: 0;
+  transform: scale(1.12);
+  filter: blur(8px);
+  pointer-events: none;
+}
+
+.uu-groups-intro > * {
+  grid-area: 1 / 1;
+}
+
+.uu-gi-net {
+  width: min(88vmin, 600px);
+  height: auto;
+  overflow: visible;
+  transition:
+    opacity 1s ease,
+    scale 1.6s cubic-bezier(0.2, 0.7, 0.2, 1),
+    filter 1s ease;
+  animation: uuGroupsSpin 40s linear infinite;
+}
+
+.uu-groups-intro.s1 .uu-gi-net {
+  opacity: 0.3;
+  scale: 1.08;
+  filter: blur(1.5px);
+}
+
+.uu-gi-line {
+  stroke: rgba(255, 255, 255, 0.5);
+  stroke-width: 0.9;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: uuGroupsLineDraw 0.7s ease forwards;
+  animation-delay: var(--d, 0s);
+}
+
+@keyframes uuGroupsLineDraw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.uu-gi-node {
+  fill: #fff;
+  filter: drop-shadow(0 0 5px #fff);
+  transform-box: fill-box;
+  transform-origin: center;
+  transform: scale(0);
+  animation: uuGroupsNodePop 0.5s
+    cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+  animation-delay: var(--d, 0s);
+}
+
+.uu-gi-core {
+  --d: 0s;
+}
+
+@keyframes uuGroupsNodePop {
+  to {
+    transform: scale(1);
+  }
+}
+
+.uu-gi-label {
+  font-family: ui-monospace, Menlo, monospace;
+  font-size: 9px;
+  fill: rgba(255, 255, 255, 0.6);
+  opacity: 0;
+  animation: uuGroupsLabelIn 0.6s ease forwards;
+  animation-delay: var(--d, 0s);
+}
+
+@keyframes uuGroupsLabelIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.uu-gi-ripple {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.55);
+  stroke-width: 0.8;
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: center;
+  transform: scale(0.04);
+  animation: uuGroupsRipple 2.2s ease-out forwards;
+  animation-delay: var(--d, 1s);
+}
+
+@keyframes uuGroupsRipple {
+  0% {
+    opacity: 0.8;
+    transform: scale(0.04);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+.uu-gi-script {
+  font-family: var(
+    --script,
+    "Pacifico",
+    "Brush Script MT",
+    "Segoe Script",
+    cursive
+  );
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.uu-gi-text {
+  margin: 0;
+  padding: 0 20px;
+  text-align: center;
+  font-size: clamp(1.9rem, 6vw, 3.8rem);
+  font-weight: 800;
+  letter-spacing: 0.3em;
+  line-height: 1.12;
+  opacity: 0;
+  filter: blur(10px);
+  transform: scale(0.94);
+  transition:
+    opacity 1.1s ease,
+    filter 1.1s ease,
+    letter-spacing 1.8s cubic-bezier(0.2, 0.7, 0.2, 1),
+    transform 1.4s cubic-bezier(0.2, 0.7, 0.2, 1);
+  text-shadow: 0 0 40px rgba(255, 255, 255, 0.35);
+  color: #fff;
+}
+
+.uu-groups-intro.s1 .uu-gi-text {
+  opacity: 1;
+  filter: blur(0);
+  letter-spacing: -0.02em;
+  transform: none;
+}
+
+.uu-gi-skip {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  z-index: 2;
+  padding: 9px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.uu-gi-skip:hover {
+  background: #fff;
+  color: #000;
+}
+
+@keyframes uuGroupsSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .uu-groups-intro,
+  .uu-groups-intro *,
+  .uu-groups-intro *::before,
+  .uu-groups-intro *::after {
+    animation: none !important;
+    transition-duration: 0.001s !important;
+  }
+}

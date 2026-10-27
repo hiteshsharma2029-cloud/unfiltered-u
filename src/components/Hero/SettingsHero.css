@@ -1,0 +1,106 @@
+
+.uu-settings .settings-hero {
+  padding: clamp(52px, 8vh, 88px) 0 42px;
+  position: relative;
+}
+
+.uu-settings .settings-hero .uu-hero__eyebrow {
+  margin: 0 0 24px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  opacity: 0.78;
+}
+
+.uu-settings .settings-hero .uu-hero__title {
+  margin: 0 0 22px;
+  font-family: var(--font);
+  font-size: clamp(3.25rem, 7.5vw, 6rem);
+  font-weight: 900;
+  line-height: 0.98;
+  letter-spacing: -0.065em;
+  text-wrap: balance;
+}
+
+.uu-settings .settings-hero .uu-hero__description {
+  max-width: 620px;
+  margin: 0;
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  line-height: 1.75;
+  color: var(--muted);
+}
+
+/* Glitch effect: Settings page only */
+.uu-settings .settings-glitch {
+  position: relative;
+  display: inline-block;
+}
+
+.uu-settings .settings-glitch.go {
+  animation: settings-gj 0.9s steps(2, end) 1;
+}
+
+.uu-settings .settings-glitch.go::before,
+.uu-settings .settings-glitch.go::after {
+  content: attr(data-t);
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+.uu-settings .settings-glitch.go::before {
+  color: #ff1a3c;
+  clip-path: inset(10% 0 55% 0);
+  animation: settings-g1 0.9s steps(3, end) 1 forwards;
+}
+
+.uu-settings .settings-glitch.go::after {
+  color: #00eaff;
+  clip-path: inset(55% 0 8% 0);
+  animation: settings-g2 0.9s steps(3, end) 1 forwards;
+}
+
+@keyframes settings-gj {
+  0%, 100% { transform: none; }
+  30% { transform: translateX(1px); }
+  60% { transform: translateX(-1px); }
+}
+
+@keyframes settings-g1 {
+  0% { opacity: 1; transform: translateX(-4px); }
+  50% { opacity: 1; transform: translateX(3px); }
+  100% { opacity: 0; }
+}
+
+@keyframes settings-g2 {
+  0% { opacity: 1; transform: translateX(4px); }
+  50% { opacity: 1; transform: translateX(-3px); }
+  100% { opacity: 0; }
+}
+
+@media (max-width: 640px) {
+  .uu-settings .settings-hero {
+    padding: 42px 0 30px;
+  }
+
+  .uu-settings .settings-hero .uu-hero__eyebrow {
+    margin-bottom: 18px;
+    letter-spacing: 0.22em;
+  }
+
+  .uu-settings .settings-hero .uu-hero__title {
+    font-size: clamp(2.8rem, 11vw, 4.2rem);
+    line-height: 1.02;
+    letter-spacing: -0.055em;
+    margin-bottom: 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .uu-settings .settings-glitch.go,
+  .uu-settings .settings-glitch.go::before,
+  .uu-settings .settings-glitch.go::after {
+    animation: none !important;
+  }
+}

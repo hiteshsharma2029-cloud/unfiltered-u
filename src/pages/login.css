@@ -1,0 +1,364 @@
+/* Login styles are scoped to this page so other pages are not affected. */
+.uu-login-page {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  padding: max(24px, env(safe-area-inset-top)) 16px max(24px, env(safe-area-inset-bottom));
+  color: var(--uu-text, #f4f6ff);
+  font-family: var(--uu-font, Inter, sans-serif);
+}
+
+.uu-login-page .wrapper {
+  width: min(460px, 100%);
+  margin-inline: auto;
+}
+
+.uu-login-page .brand {
+  margin-bottom: 26px;
+  text-align: center;
+}
+
+.uu-login-page .wordmark {
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: center;
+  margin: 0;
+  color: var(--uu-text, #fff);
+  font-size: clamp(2rem, 8vw, 3.1rem);
+  font-weight: 900;
+  line-height: 1;
+  text-shadow: 0 0 28px rgba(255, 255, 255, 0.16);
+}
+
+.uu-login-page .wordmark > span:last-child {
+  margin-left: 0.1em;
+}
+
+.uu-login-page .wordmark .script {
+  padding-inline: 0.08em;
+  font-family: Pacifico, "Brush Script MT", "Segoe Script", cursive;
+  font-weight: 400;
+}
+
+.uu-login-page .tag {
+  margin: 12px 0 0;
+  color: var(--uu-text-muted, rgba(255, 255, 255, 0.58));
+  font-size: 0.85rem;
+  font-weight: 300;
+  letter-spacing: 0.24em;
+  text-indent: 0.24em;
+  text-transform: uppercase;
+}
+
+.uu-login-page .card {
+  padding: 26px 24px 24px;
+  color: var(--uu-text, #fff);
+  background: var(--uu-surface, rgba(18, 24, 42, 0.78));
+  border: 1px solid var(--uu-border, rgba(255, 255, 255, 0.14));
+  border-radius: var(--uu-radius-lg, 22px);
+  box-shadow: var(--uu-shadow, 0 30px 80px rgba(0, 0, 0, 0.4));
+  -webkit-backdrop-filter: blur(var(--uu-glass-blur, 14px));
+  backdrop-filter: blur(var(--uu-glass-blur, 14px));
+}
+
+.uu-login-page .card h2 {
+  margin: 0 0 4px;
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.uu-login-page .sub {
+  margin: 0 0 20px;
+  color: var(--uu-text-muted, rgba(255, 255, 255, 0.58));
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.uu-login-page .toggle {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 22px;
+  padding: 4px;
+  background: var(--uu-bg-soft, rgba(255, 255, 255, 0.045));
+  border: 1px solid var(--uu-border, rgba(255, 255, 255, 0.14));
+  border-radius: var(--uu-radius-pill, 999px);
+}
+
+.uu-login-page .toggle .thumb {
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: 4px;
+  width: calc(50% - 4px);
+  background: var(--uu-accent-strong, #fff);
+  border-radius: 999px;
+  box-shadow: 0 0 22px rgba(139, 124, 255, 0.24);
+  transition: transform 0.45s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.uu-login-page .toggle[data-mode="college"] .thumb {
+  transform: translateX(100%);
+}
+
+.uu-login-page .toggle button {
+  position: relative;
+  z-index: 1;
+  appearance: none;
+  border: 0;
+  background: none;
+  color: var(--uu-text-muted, rgba(255, 255, 255, 0.58));
+  cursor: pointer;
+  padding: 11px 8px;
+  border-radius: 999px;
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  transition: color 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.uu-login-page .toggle button[aria-checked="true"] {
+  color: #111426;
+}
+
+.uu-login-page .toggle button:focus-visible {
+  outline: 2px solid var(--uu-accent-strong, #fff);
+  outline-offset: 2px;
+}
+
+.uu-login-page .fields {
+  display: grid;
+  gap: 16px;
+  animation: uuLoginFieldsIn 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+@keyframes uuLoginFieldsIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: none; }
+}
+
+.uu-login-page .field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 0;
+}
+
+.uu-login-page label {
+  color: var(--uu-text-muted, rgba(255, 255, 255, 0.58));
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.uu-login-page input,
+.uu-login-page select {
+  width: 100%;
+  min-width: 0;
+  height: 48px;
+  padding: 0 14px;
+  appearance: none;
+  -webkit-appearance: none;
+  color: var(--uu-text, #fff);
+  background: var(--uu-bg-soft, rgba(255, 255, 255, 0.045));
+  border: 1px solid var(--uu-border, rgba(255, 255, 255, 0.14));
+  border-radius: 12px;
+  font: inherit;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.uu-login-page input::placeholder {
+  color: var(--uu-text-faint, rgba(255, 255, 255, 0.32));
+}
+
+.uu-login-page input:hover,
+.uu-login-page select:hover {
+  border-color: var(--uu-accent-strong, rgba(255, 255, 255, 0.3));
+}
+
+.uu-login-page input:focus,
+.uu-login-page select:focus {
+  border-color: var(--uu-accent-strong, #fff);
+  background: var(--uu-surface-hover, rgba(255, 255, 255, 0.07));
+  box-shadow: 0 0 0 3px var(--uu-accent-soft, rgba(139, 124, 255, 0.16));
+}
+
+.uu-login-page select {
+  padding-right: 38px;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='%23ffffff' stroke-opacity='.7' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+}
+
+.uu-login-page select:invalid {
+  color: var(--uu-text-faint, rgba(255, 255, 255, 0.32));
+}
+
+.uu-login-page select option {
+  color: var(--uu-text, #fff);
+  background: var(--uu-bg-soft, #0e1322);
+}
+
+.uu-login-page input:-webkit-autofill {
+  -webkit-text-fill-color: var(--uu-text, #fff);
+  box-shadow: 0 0 0 100px var(--uu-bg-soft, #0e1322) inset;
+}
+
+.uu-login-page .field.invalid input {
+  border-color: #ff5c70;
+}
+
+.uu-login-page .err {
+  display: none;
+  margin: 0;
+  color: #ff7182;
+  font-size: 0.78rem;
+}
+
+.uu-login-page .field.invalid .err {
+  display: block;
+}
+
+.uu-login-page .submit {
+  width: 100%;
+  min-height: 52px;
+  margin-top: 22px;
+  padding: 12px 18px;
+  appearance: none;
+  border: 1px solid var(--uu-accent, #8b7cff);
+  border-radius: 999px;
+  color: #fff;
+  background: var(--uu-accent, #8b7cff);
+  cursor: pointer;
+  font: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  box-shadow: 0 0 30px rgba(139, 124, 255, 0.18);
+  transition: transform 0.2s cubic-bezier(0.2, 0.7, 0.2, 1), box-shadow 0.25s ease, background 0.2s ease;
+}
+
+.uu-login-page .submit:hover {
+  transform: translateY(-1px);
+  background: var(--uu-accent-strong, #a69aff);
+  box-shadow: 0 0 38px rgba(139, 124, 255, 0.28);
+}
+
+.uu-login-page .submit:active {
+  transform: translateY(0) scale(0.99);
+}
+
+.uu-login-page .submit:focus-visible {
+  outline: 2px solid var(--uu-accent-strong, #fff);
+  outline-offset: 3px;
+}
+
+.uu-login-page .done {
+  padding: 10px 0 4px;
+  text-align: center;
+  animation: uuLoginFieldsIn 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.uu-login-page .done .tick {
+  display: grid;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  margin: 0 auto 16px;
+  border: 1.5px solid var(--uu-accent-strong, #fff);
+  border-radius: 50%;
+  box-shadow: 0 0 34px rgba(139, 124, 255, 0.2);
+}
+
+.uu-login-page .done h2 {
+  font-size: 1.5rem;
+}
+
+.uu-login-page .done p {
+  margin: 6px 0 0;
+  color: var(--uu-text-muted, rgba(255, 255, 255, 0.58));
+  line-height: 1.5;
+}
+
+.uu-login-page .done dl {
+  margin: 20px 0 0;
+  border-top: 1px solid var(--uu-border, rgba(255, 255, 255, 0.14));
+  text-align: left;
+}
+
+.uu-login-page .done dl div {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 11px 2px;
+  border-bottom: 1px solid var(--uu-border, rgba(255, 255, 255, 0.14));
+  font-size: 0.9rem;
+}
+
+.uu-login-page .done dt {
+  flex: none;
+  color: var(--uu-text-muted, rgba(255, 255, 255, 0.58));
+}
+
+.uu-login-page .done dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+  text-align: right;
+}
+
+.uu-login-page .again {
+  min-height: 46px;
+  margin-top: 20px;
+  padding: 0 22px;
+  color: var(--uu-text, #fff);
+  background: transparent;
+  border: 1px solid var(--uu-border, rgba(255, 255, 255, 0.42));
+  border-radius: 999px;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+}
+
+.uu-login-page .again:hover {
+  background: var(--uu-accent-soft, rgba(255, 255, 255, 0.08));
+}
+
+.uu-login-page .uu-login-continue {
+  margin-bottom: 2px;
+}
+
+@media (max-width: 420px) {
+  .uu-login-page .card {
+    padding: 22px 18px 20px;
+    border-radius: 20px;
+  }
+
+  .uu-login-page .tag {
+    font-size: 0.78rem;
+    letter-spacing: 0.18em;
+    text-indent: 0.18em;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .uu-login-page *,
+  .uu-login-page *::before,
+  .uu-login-page *::after {
+    animation: none !important;
+    transition-duration: 0.001s !important;
+  }
+}
+/* Fix: Keep Login button text visible */
+.uu-login-page button.submit {
+  color: #111426 !important;
+}
